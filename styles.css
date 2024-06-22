@@ -1,0 +1,315 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  background: url(images/desktop/image-hero.jpg) no-repeat center top;
+  background-size: 100% auto;
+  width: 100%;
+}
+
+.background {
+  padding: 60px 160px;
+  height: 750px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-links {
+  display: block;
+}
+.header .nav-links a {
+  margin-right: 25px;
+  font-size: 25px;
+}
+.header .nav-links a:hover {
+  border-bottom: 3px solid white;
+}
+.header .hamburger-icon {
+  display: none;
+}
+.header .hamburger-menu {
+  display: none;
+  background-color: black;
+  position: fixed;
+  width: 340px;
+  height: 100%;
+  right: -390px;
+  top: 0;
+  padding: 50px 20px;
+  transition: all 0.3s ease;
+}
+.header .hamburger-menu.active {
+  right: 0;
+}
+.header .hamburger-menu .menu-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .hamburger-menu ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.header .hamburger-menu ul li {
+  margin-top: 20px;
+}
+.header .hamburger-menu.active {
+  right: 0;
+}
+
+.head-text {
+  width: 40%;
+  border: 3px solid white;
+  margin-top: 150px;
+  padding: 10px 25px;
+}
+.head-text h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 75px;
+}
+
+.main-info {
+  margin-top: 250px;
+  padding: 60px 160px;
+  position: relative;
+}
+.main-info img {
+  width: 60%;
+}
+.main-info .main-text {
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  right: 300px;
+  background-color: white;
+  padding: 75px;
+}
+.main-info .main-text h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.main-info .main-text p {
+  font-size: 20px;
+}
+
+.creations-title {
+  padding: 60px 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+}
+.creations-title h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.creations-title button {
+  border: 1px solid black;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.creations-title button:hover {
+  color: white;
+  background-color: black;
+}
+
+.grid {
+  padding: 60px 160px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 40px;
+  width: 1500px;
+}
+.grid .container {
+  position: relative;
+  width: 256px;
+  height: 450px;
+}
+.grid .container img {
+  position: absolute;
+}
+.grid .container .overflow {
+  position: absolute;
+  width: 256px;
+  height: 450px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+}
+.grid .container .overflow:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+.grid .container .overflow h1 {
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-weight: 300;
+}
+
+footer {
+  background-color: black;
+  padding: 40px 160px;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .nav-links {
+  display: block;
+  margin-top: 50px;
+}
+footer .footer .nav-links a {
+  margin-right: 20px;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+footer .footer .nav-links a:hover {
+  border-bottom: 3px solid white;
+}
+footer .footer .social a {
+  float: right;
+  margin-left: 15px;
+}
+footer .footer .social a:hover {
+  border-bottom: 2px solid white;
+}
+footer .footer .social h1 {
+  margin-top: 70px;
+  color: gray;
+  font-size: 20px;
+  font-weight: 400;
+}
+footer .footer .social-icon {
+  display: block;
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    background: url(images/mobile/image-hero.jpg) no-repeat center top;
+    background-size: 100% auto;
+    width: 100%;
+  }
+  .background {
+    padding: 60px 45px;
+    height: 650px;
+  }
+  .header .nav-links {
+    display: none;
+  }
+  .header .hamburger-icon {
+    display: block;
+  }
+  .header .hamburger-menu {
+    display: block;
+  }
+  .header .hamburger-menu.active {
+    right: 0;
+  }
+  .head-text {
+    width: 90%;
+  }
+  .head-text h1 {
+    font-size: 40px;
+  }
+  .main-info {
+    padding: 20px;
+    margin-top: 0;
+  }
+  .main-info img {
+    width: 100%;
+  }
+  .main-info .main-text {
+    position: relative;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .main-info .main-text h1 {
+    font-size: 40px;
+  }
+  .main-info .main-text p {
+    font-size: 24px;
+    color: gray;
+  }
+  .creations-title {
+    padding: 20px;
+    flex-direction: column;
+    width: 335px;
+  }
+  .creations-title button {
+    display: none;
+  }
+  .grid {
+    display: block;
+    padding: 20px;
+    width: 0;
+  }
+  .grid img {
+    width: 100%;
+  }
+  .grid .container {
+    position: relative;
+    width: 340px;
+    height: 150px;
+  }
+  .grid .container .overflow {
+    width: 340px;
+    height: 135px;
+  }
+  footer {
+    padding: 20px;
+  }
+  footer .footer {
+    display: block;
+  }
+  footer .footer .nav-bars {
+    text-align: center;
+  }
+  footer .footer .nav-bars .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer .nav-bars .nav-links a {
+    padding-top: 20px;
+    font-weight: 400;
+  }
+  footer .footer .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer .social .social-icon {
+    margin-top: 50px;
+  }
+  footer .footer .social h1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=styles.css.map */
